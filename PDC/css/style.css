@@ -150,3 +150,73 @@ width: 100%;
     color: #FFB41F;
     border-bottom: 3px solid #FFB41F;
 }
+
+/******************************** Slide *******************************/
+.slide{
+
+    height: 220px;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+.slide p{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.slide-content{
+    position: relative;
+    width: 100%;
+    height: calc( 100% - 40px);
+    border-radius: 10px;
+}
+.slide-img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.slide-details{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 6;
+    background-color: rgba(4, 133, 197, 0.2);
+    transition: .3s linear;
+}
+
+.slide-details a{
+    opacity: 0;
+  
+    transition: .3s linear;
+}
+
+.slide-details:hover{
+    background-color: rgba(4, 133, 197, 0);
+}
+.slide-details:hover a{
+   opacity: 1;
+}
+
+.links{
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+}
+
+
+.slide img{
+    border: 1px solid rgba(128, 128, 128, 0.466);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
