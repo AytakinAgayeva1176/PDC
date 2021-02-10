@@ -91,6 +91,7 @@ body{
 }
 
 .menu-body ul>li:hover {
+    transition: .3s;
 color: #FFB41F;
 }
 
@@ -129,4 +130,23 @@ width: 100%;
 
 
 
+.languages a{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    margin:0 10px;
+    transition: .3s;
+}
 
+.languages a:first-child, .languages a:last-child{
+  margin: 0;
+}
+.activeLanguage{
+    color: #FFB41F;
+    border-bottom: 3px solid #FFB41F;
+}
+
+.languages a:hover{
+    color: #FFB41F;
+    border-bottom: 3px solid #FFB41F;
+}

@@ -104,82 +104,6 @@
 
 
 
-
-
-
-
-
-
-                <!------------------------- TABLE --------------------->
-    <section class="page-wrapper"> 
-        <div class="page-content-tab py-5 px-3">
-
-            <div class="container-fluid">
-                <!-- Page-Title -->
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="page-title-box">
-                            <!-- saytın dinamik hissələri bura əlavə olunur -->
-                            <h4>Müraciətlərin Siyahısı</h4>
-                            <div class="row pt-3">
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-striped mb-0">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Adı</th>
-                                                            <th>Soyadı</th>
-                                                            <th>Email</th>
-                                                            <th>Əlaqə nömrəsi</th>
-                                                            <th>Tədris paketi</th>
-                                                            <th>Vaxt aralığı</th>
-                                                            <th>Keçmiş təcrübələri</th>
-                                                            <th>Sil</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                            <tr>
-                                                                <td>data</td>
-                                                                <td>data</td>
-                                                                <td>data</td>
-                                                                <td>data</td>
-                                                                <td>data</td>
-                                                                <td>data</td>
-                                                                <td>data</td>
-                                                                <td>data</td>
-                                                                <td>
-                                                                    <a href="" class="mr-2"><i class="fas fa-edit text-info font-16"></i></a>
-                                                                    <a href=""><i class="fas fa-trash-alt text-danger font-16"></i></a>
-                                                                </td>
-                                                            </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div><!--end page-title-box-->
-                    </div><!--end col-->
-                </div>
-                <!-- end page title end breadcrumb -->
-            </div><!-- container -->
-          
-        </div>
-
-        
-   </section>
-
-         <!------------------------- END TABLE --------------------->
-
-
-
-
-
-
                <!------------------------- ABOUT --------------------->
    <section class="page-wrapper"> 
     <div class="page-content-tab py-5 px-3">
@@ -190,13 +114,22 @@
                 <div class="col-sm-12">
                     <div class="page-title-box">
                         <!-- saytın dinamik hissələri bura əlavə olunur -->
-                        <h4>About</h4>
+                      <div class="row justify-content-between align-items-center">
+                          <div class="col-md-6">
+                            <h4>About</h4>
+                          </div>
+                          <div class="col-md-6 languages d-flex justify-content-md-end">
+                            <a href="/Home/GetAllAbout/1" >AZ</a>
+                            <a href="/Home/GetAllAbout/2" class="activeLanguage">EN</a>
+                            <a href="/Home/GetAllAbout/3">RU</a>
+                            </div>
+                      </div>
                         <div class="row pt-3">
                             <div class="col-lg-12">
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="row">
-                                            <div class="col-6">
+                                            <div class="col-lg-6 my-2">
                                                 <div class="about-content">
                                                     <div class="row">
                                                         <div class="col-12 pb-2 border-bottom">
@@ -209,36 +142,32 @@
                                                                 atque commodi similique ea cupiditate nisi iure non eos alias neque mollitia deleniti!</p>
                                                         </div>
                                                     </div>
-                                                   
-                                            
-                                              
                                                 </div>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-lg-6 my-2">
                                                 <div class="about-image">
                                                     <img src="download (1).jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
 
-                                     
-
-                                        <div class="row justify-content-end pt-3">
-                                            <div class="col-2">
-                                                <select name="" id="">
-                                                    <option value="" selected disabled >Change Language</option>
-                                                    <option value="">English</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-2 d-flex justify-content-center">
-                                                <a href="" class="mr-2">Edit <i class="fas fa-edit text-info font-16"></i></a>
-                                          
+                        <div class="row pt-2">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-3 btn btn-warning">
+                                                <a href="" class="send-btn" style="color: white; font-size: 20px;">Edit <i class="fas fa-edit text-info"></i></a>
                                             </div>
                                           </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div><!--end page-title-box-->
                 </div><!--end col-->
             </div>
@@ -246,101 +175,8 @@
         </div><!-- container -->
       
     </div>
-
-    
 </section>
 
-      <!------------------------- END ABOUT --------------------->
-
-
-
-
-
-
-                     <!------------------------- edit ABOUT --------------------->
-   <section class="page-wrapper"> 
-    <div class="page-content-tab py-5 px-3">
-
-        <div class="container-fluid">
-            <!-- Page-Title -->
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="page-title-box">
-                        <!-- saytın dinamik hissələri bura əlavə olunur -->
-                        <h4>Edit About</h4>
-                        <div class="row pt-3">
-                            <div class="col-lg-12">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="form-wrap w-100">
-                                            <form asp-controller="Declaration" asp-action="NewDeclaration" method="post" enctype="multipart/form-data">
-                                                <div class="border  p-4  mb-4 col-12">
-                                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                                                    <div class="row">
-                                                        <div hidden>
-                                                            <label asp-for="LanguageId" class="control-label"></label>
-                                                            <input name="LanguageId" asp-for="LanguageId" class="form-control" />
-                                                            <span asp-validation-for="LanguageId" class="text-danger"></span>
-                                                        </div>
-                                                        <div class="col-lg-6">
-                                                            <div class="my-2 form-group">
-                                                                <label asp-for="LanguageVersionOfTitle" class="control-label">Title:</label>
-                                                                <input asp-for="LanguageVersionOfTitle" class="form-control mt-2" />
-                                                                <span asp-validation-for="LanguageVersionOfTitle" class="text-danger"></span>
-                                                            </div>
-
-                                                            <div class="my-2 form-group">
-                                                                <label asp-for="File" class="control-label">Sənəd:</label>
-                                                                <input type="file" asp-for="File" class="form-control mt-2 />
-                                                                <span asp-validation-for="File" class="text-danger"></span>
-                                                            </div>
-                                                        </div>
-                                                         <div class="col-lg-6">
-                                                            <div class="my-2 form-group">
-                                                                <label asp-for="LanguageVersionOfTitle" class="control-label">Description</label>
-                                                                <textarea asp-for="LanguageVersionOfTitle" class="form-control mt-2" rows="4"></textarea>
-                                                                <span asp-validation-for="LanguageVersionOfTitle" class="text-danger"></span>
-                                                            </div>
-                                                         </div>
-     
-                                              </div>
-              
-                                                </div>
-                                        
-                                                <div class="row mb-3">
-                                                    <div class="col-12">
-                                                      
-                                                    </div>
-                                                </div>
-                                                <div class="row form-bottom">
-                                                    <div class="col-12 d-flex justify-content-center">
-                                        
-                                                        <div class="form-group ">
-                                                            <input style="color:white;" type="submit" value="Edit" class="btn send-btn px-5 btn btn-warning" />
-                                                        </div>
-                                        
-                                        
-                                                    </div>
-                                                </div>
-                                        
-                                        
-                                            </form>
-                                        
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div><!--end page-title-box-->
-                </div><!--end col-->
-            </div>
-            <!-- end page title end breadcrumb -->
-        </div><!-- container -->
-      
-    </div>
-
-    
-</section>
 
       <!------------------------- END  edit ABOUT --------------------->
     <script src="https://kit.fontawesome.com/4d10e62fd0.js" crossorigin="anonymous"></script>

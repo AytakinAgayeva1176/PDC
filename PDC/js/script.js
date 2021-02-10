@@ -30,5 +30,10 @@ $(document).on("click", ".close", function () {
      $(".nav-icon").removeClass("active")
    $(".page-wrapper").css({"width" : "calc( 100vw - 70px)", "margin-left" : "70px"})
  })
+
+ $(document).on("click", ".languages a", function () {
+    $(".languages a").removeClass("activeLanguage")
+     $(this).addClass("activeLanguage")
+ })
  
 });
