@@ -100,3 +100,33 @@ color: #FFB41F;
     width: calc( 100vw - 270px);
     margin-left: 270px;
 }
+
+
+.page-title-box h4{
+    position: relative;
+    font-size: 42px;
+    color: #1e1e1e;
+}
+
+
+/*************************** ABOUT ***************************/
+
+.about-image{
+width: 100%;
+}
+.about-image img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.page-wrapper strong{
+    font-size: 24px;
+}
+
+.page-wrapper p{
+    margin-top:10px;
+}
+
+
+
+

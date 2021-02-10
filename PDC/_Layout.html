@@ -12,6 +12,7 @@
 </head>
 <body>
     
+          <!------------------------- LAYOUT --------------------->
     <div class="leftbar-tab-menu">
         <div class="main-icon-menu">
             <a href="#" class="logo logo-metrica d-block text-center">
@@ -99,6 +100,9 @@
         </div><!-- end main-menu-inner-->
     </div>
 
+          <!-------------------------END LAYOUT --------------------->
+
+                <!------------------------- TABLE --------------------->
     <section class="page-wrapper"> 
         <div class="page-content-tab py-5 px-3">
 
@@ -161,7 +165,168 @@
         
    </section>
 
-   
+         <!------------------------- END TABLE --------------------->
+
+
+               <!------------------------- ABOUT --------------------->
+   <section class="page-wrapper"> 
+    <div class="page-content-tab py-5 px-3">
+
+        <div class="container-fluid">
+            <!-- Page-Title -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title-box">
+                        <!-- saytın dinamik hissələri bura əlavə olunur -->
+                        <h4>About</h4>
+                        <div class="row pt-3">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="about-content">
+                                                    <div class="row">
+                                                        <div class="col-12 pb-2 border-bottom">
+                                                            <strong>Title</strong>
+                                                            <p>LOREM IPSUM</p>
+                                                        </div>
+                                                        <div class="col-12 pt-3">
+                                                            <strong>Description</strong>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius itaque placeat, inventore nemo enim vitae facere quidem
+                                                                atque commodi similique ea cupiditate nisi iure non eos alias neque mollitia deleniti!</p>
+                                                        </div>
+                                                    </div>
+                                                   
+                                            
+                                              
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="about-image">
+                                                    <img src="download (1).jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                     
+
+                                        <div class="row justify-content-end pt-3">
+                                            <div class="col-2">
+                                                <select name="" id="">
+                                                    <option value="" selected disabled >Change Language</option>
+                                                    <option value="">English</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-2 d-flex justify-content-center">
+                                                <a href="" class="mr-2">Edit <i class="fas fa-edit text-info font-16"></i></a>
+                                          
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div><!--end page-title-box-->
+                </div><!--end col-->
+            </div>
+            <!-- end page title end breadcrumb -->
+        </div><!-- container -->
+      
+    </div>
+
+    
+</section>
+
+      <!------------------------- END ABOUT --------------------->
+
+
+                     <!------------------------- ABOUT --------------------->
+   <section class="page-wrapper"> 
+    <div class="page-content-tab py-5 px-3">
+
+        <div class="container-fluid">
+            <!-- Page-Title -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title-box">
+                        <!-- saytın dinamik hissələri bura əlavə olunur -->
+                        <h4>Edit About</h4>
+                        <div class="row pt-3">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="form-wrap w-100">
+                                            <form asp-controller="Declaration" asp-action="NewDeclaration" method="post" enctype="multipart/form-data">
+                                                <div class="border  p-4  mb-4 col-12">
+                                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                                    <div class="row">
+                                                        <div hidden>
+                                                            <label asp-for="LanguageId" class="control-label"></label>
+                                                            <input name="LanguageId" asp-for="LanguageId" class="form-control" />
+                                                            <span asp-validation-for="LanguageId" class="text-danger"></span>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="my-2 form-group">
+                                                                <label asp-for="LanguageVersionOfTitle" class="control-label">Title:</label>
+                                                                <input asp-for="LanguageVersionOfTitle" class="form-control mt-2" />
+                                                                <span asp-validation-for="LanguageVersionOfTitle" class="text-danger"></span>
+                                                            </div>
+
+                                                            <div class="my-2 form-group">
+                                                                <label asp-for="File" class="control-label">Sənəd:</label>
+                                                                <input type="file" asp-for="File" class="form-control mt-2 />
+                                                                <span asp-validation-for="File" class="text-danger"></span>
+                                                            </div>
+                                                        </div>
+                                                         <div class="col-lg-6">
+                                                            <div class="my-2 form-group">
+                                                                <label asp-for="LanguageVersionOfTitle" class="control-label">Description</label>
+                                                                <textarea asp-for="LanguageVersionOfTitle" class="form-control mt-2" rows="4"></textarea>
+                                                                <span asp-validation-for="LanguageVersionOfTitle" class="text-danger"></span>
+                                                            </div>
+                                                         </div>
+     
+                                              </div>
+              
+                                                </div>
+                                        
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                      
+                                                    </div>
+                                                </div>
+                                                <div class="row form-bottom">
+                                                    <div class="col-12 d-flex justify-content-center">
+                                        
+                                                        <div class="form-group ">
+                                                            <input style="color:white;" type="submit" value="Edit" class="btn send-btn px-5 btn btn-warning" />
+                                                        </div>
+                                        
+                                        
+                                                    </div>
+                                                </div>
+                                        
+                                        
+                                            </form>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div><!--end page-title-box-->
+                </div><!--end col-->
+            </div>
+            <!-- end page title end breadcrumb -->
+        </div><!-- container -->
+      
+    </div>
+
+    
+</section>
+
+      <!------------------------- END ABOUT --------------------->
     <script src="https://kit.fontawesome.com/4d10e62fd0.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
