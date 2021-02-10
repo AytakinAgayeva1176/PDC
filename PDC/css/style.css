@@ -219,4 +219,10 @@ width: 100%;
 }
 
 
+.btn-dark:hover{
+    transition: .3s linear;
+    background-color: #FFB41F;
+    border-color: #FFB41F;
+    color: #1b1c1fec;font-weight: 700;
+}
 
