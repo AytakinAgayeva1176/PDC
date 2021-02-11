@@ -36,4 +36,12 @@ $(document).on("click", ".close", function () {
      $(this).addClass("activeLanguage")
  })
  
+
+ $(document).on("click", ".tabs li", function () {
+    $(".tabs li").removeClass("active-li")
+    $(this).addClass("active-li")
+    $(".tabs-content>div").addClass("d-none")
+    $(".tabs-content>div").eq($(this).index()).removeClass("d-none")
+
+})
 });
